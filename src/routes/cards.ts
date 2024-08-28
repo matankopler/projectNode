@@ -13,8 +13,8 @@ const router = Router()
 
 router.get("/", async (req, res, next) => {
     try {
-        const cards = await cardService.getCards();
-        res.json(cards);
+        const cardss = await cardService.getCards();
+        res.json(cardss);
     } catch (e) {
         next(e)
     }
